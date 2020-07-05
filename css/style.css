@@ -599,7 +599,7 @@
     .portfolio .portfolio-item-inner:hover .portfolio-info{
         opacity: 1;
 
-        
+
     }
     .portfolio .portfolio-item .portfolio-info h4{
         font-size: 18px;
@@ -639,5 +639,62 @@
     }
     .portfolio .portfolio-item .portfolio-info .icon .fa{
         line-height: 20px;
+    }
+
+    /*Lightbox*/
+    .lightbox{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 100;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        cursor: zoom-out;
+    }
+    .lightbox .lightbox-content img{
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 430%;
+        cursor: pointer;
+
+    }
+    .lightbox-caption .lightbox{
+        position: relative;
+    }
+    .lightbox .lightbox-content .lightbox-close{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: -40px;
+        right: 0px;
+        font-size: 32px;
+        text-align: center;
+        color: #ffffff;
+        line-height: 40px;
+        
+
+    }
+    .lightbox-caption .lightbox .lightbox-content{
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: space-between;
+        font-size: 16px;
+        justify-content: space-between;
+        color: #ffffff;
+        font-weight: 400;
+
     }
     
