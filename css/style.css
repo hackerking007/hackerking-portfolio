@@ -571,6 +571,27 @@
         max-width: 33.33%;
         margin-bottom: 30px;
     }
+    .portfolio .portfolio-item .hide{
+        display: none;
+    }
+    .portfolio .portfolio-item .show{
+        display: block;
+        animation: showItem 0.5s ease;
+    }
+
+    @-webkit-@keyframes showItem{
+        0%{
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        100%{
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+            opacity: 1;
+        }
+    }
+
 .portfolio .portfolio-item-inner{
     border: 6px solid #ffffff;
     border-radius: 10px;
@@ -581,6 +602,8 @@
 .portfolio .portfolio-item-inner .portfolio-img img{
     width: 100%;
     display: block;
+  
+  
  
 }
 .portfolio .portfolio-item .portfolio-info {
@@ -595,16 +618,7 @@
     -webkit-transition: all 0.3s ease; 
     transition: all 0.3s ease;
     opacity: 0;    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+       
     
 }    
     
@@ -671,127 +685,146 @@
     }
 
     /*Lightbox*/
-    .lightbox{
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.6);
-        z-index: 100;
-       
-        display: none;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        cursor: zoom-out;
-        padding:30px;
+    .lightbox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: zoom-out;
+    padding: 30px;
+}
+
+.lightbox.open {
+    display: -ms-flexbox;
+    display: flex;
+}
 
 
-    }
-    .lightbox .open{
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .lightbox .lightbox-content img{
-        height: auto;
-        width: auto;
-        max-width: 100%;
-        max-height: 430%;
-        cursor: pointer;
+.lightbox .lightbox-content img {
+    height: auto;
+    width: auto;
+    max-height: 450px;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.lightbox .lightbox-content {
+    position: relative;
+    /* -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); */
+}
+
+.lightbox.open .lightbox-content {
+    /* -webkit-transform: scale(0.1);
+    transform: scale(0.1); */
+    animation: lightboxImage .8s ease;
+}
+
+@-webkit-keyframes lightboxImage {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
 
     }
-    .lightbox .lightbox-content{
-        position: relative;
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease; 
-       
-    }
-    .lightbox .open .lightbox-content{
-        animation: lightboxImage .5s ease;;
-      
-    }
-    @-webkit-@keyframes lightboxImage{
-        0%{
-            -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-          
-        }
-        100%{
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-    }
 
-    @keyframes lightboxImage{
-        0%{
-            -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-          
-        }
-        100%{
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
-    .lightbox .lightbox-content .lightbox-close{
-        position: absolute;
-        height: 40px;
-        width: 40px;
-        top: -40px;
-        right: 0px;
-        font-size: 32px;
-        text-align: center;
-        color: #ffffff;
-        line-height: 40px;
-        
+}
+
+@keyframes lightboxImage {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
 
     }
-    .lightbox-caption .lightbox .lightbox-content{
-        position: absolute;
-        bottom: -20px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0,0,0,0.5);
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: space-between;
-        font-size: 16px;
-        justify-content: space-between;
-        color: #ffffff;
-        font-weight: 400;
 
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
-    .lightbox .lightbox-conrols .prev-item,
-    .lightbox .lightbox-conrols .next-item {
-        position: absolute;
-        height: 40px; 
-        width: 40px;
-        background-color: #ffffff;
-        text-align: center;
-        border-radius: 50%;
-        cursor: pointer;
-        top: 50%;
-        margin-top: -20px;
-        z-index: 110;
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
+}
 
-    }
-    .lightbox .lightbox-conrols .prev-item:active,
-    .lightbox .lightbox-conrols .next-item:active{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-    .lightbox .lightbox-conrols .prev-item{
-        left: 30px;
-    }
-    .lightbox .lightbox-conrols .next-item{
-        right: 30px;
-    }
-    .lightbox .lightbox-conrols .prev-item .fa,
-    .lightbox .lightbox-conrols .next-item .fa{
-        font-size: 32px; 
-        line-height: 40px;
-    }
+.lightbox .lightbox-content .lightbox-close {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    /* background-color: red; */
+    top: -40px;
+    right: 0px;
+    font-size: 32px;
+    text-align: right;
+    color: #fff;
+    line-height: 40px;
+}
+
+.lightbox .lightbox-content .lightbox-caption {
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 110;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lightbox .lightbox-controls .prev-item:hover,
+.lightbox .lightbox-controls .next-item:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .next-item:active {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.lightbox .lightbox-controls .prev-item {
+    left: 30px;
+
+}
+
+.lightbox .lightbox-controls .next-item {
+    right: 30px;
+
+}
+
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa {
+    font-size: 32px;
+    line-height: 40px;
+}
