@@ -5,7 +5,8 @@
 .aside .logo a::after{
     border-right: 4px solid #ec1839;
     border-bottom: 4px solid #ec1839;
-}
+}.lightbox .lightbox-conrols .prev-items .fa,
+.lightbox .lightbox-conrols .next-items.fa,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
 .portfolio .portfolio-filter button.active,
 .service .service-item .service-item-inner .icon .fa,
