@@ -104,6 +104,8 @@
        transition: all 0.3s ease;
        display: inline-block;
        white-space: nowrap;
+       border: none;
+       cursor: pointer;
     }
     .btn:hover{
         -webkit-transform: scale(1.05);
@@ -859,4 +861,9 @@
     color: #504e70;
     margin: 0;
     font-weight: 400;
+}
+.contact .contact-form{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
