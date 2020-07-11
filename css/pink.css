@@ -5,7 +5,10 @@
 .aside .logo a::after{
     border-right: 4px solid #ec1839;
     border-bottom: 4px solid #ec1839;
-}.lightbox .lightbox-conrols .prev-items .fa,
+}
+
+.contact .contact-info-item .icon .fa,
+.lightbox .lightbox-conrols .prev-items .fa,
 .lightbox .lightbox-conrols .next-items.fa,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
 .portfolio .portfolio-filter button.active,
