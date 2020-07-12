@@ -1,6 +1,6 @@
 
 
-const links=document.querySelector(".alternate-style");
+const links=document.querySelectorAll(".alternate-style");
 totalLinks=links.length;
 
 
@@ -17,3 +17,7 @@ function setActiveStyle(color){
     }
     
 }
+
+document.querySelector(".toggle-style-switcher").addEventListener("click",() => {
+    document.querySelector(".style-swither").classList.toggle("open")
+})
