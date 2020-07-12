@@ -8,8 +8,8 @@
     border: 1px solid #d4d4e3;
     border-right: none;
     border-radius: 0 0 0 5px;
-    /* -webkit-transform: translateX(100%); 
-    transform: translateX(100%); */
+     -webkit-transform: translateX(100%); 
+    transform: translateX(100%); 
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -28,6 +28,8 @@
 .style-switcher ul{
     margin: 0;
     padding: 0;
+    display: block;
+    margin-bottom: 5px;
     list-style: none;
 }
 .style-switcher ul li{
