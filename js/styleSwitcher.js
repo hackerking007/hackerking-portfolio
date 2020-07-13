@@ -36,3 +36,4 @@ const bodySkin=document.querySelectorAll(".body-skin"),
 document.querySelector(".toggle-style-switcher").addEventListener("click",() => {
     document.querySelector(".style-swither").classList.toggle("open")
 })
+
