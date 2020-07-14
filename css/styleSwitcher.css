@@ -6,7 +6,7 @@
     background-color: #ffffff;
     padding: 15px;
     border: 1px solid #d4d4e3;
-    border-right: none;
+    /* border-right: none; */
     border-radius: 0 0 0 5px;
      -webkit-transform: translateX(100%); 
     transform: translateX(100%); 
@@ -42,4 +42,22 @@
     border-radius: 50%;
     text-decoration: none;
     margin-right: 2px;
+}
+.style-switcher .toggle-style-switcher {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background: #fff;
+    left: -46px;
+    top: -1px;
+    border: 1px solid #d4d4e3;
+    border-right: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+}
+
+.style-switcher .toggle-style-switcher .fa {
+    font-size: 20px;
+    line-height: 43px;
 }
