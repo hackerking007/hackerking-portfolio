@@ -268,9 +268,9 @@ body {
         z-index: 11;
         border-radius: 5px;
         background-color: #fdf9ff;
-        /*display:-ms-flexbox;
-        display: flex;*/
-        display: none;
+        display:-ms-flexbox;
+        display: flex;
+        
         -ms-flex-align: center;
         align-items: center;
         -ms-flex-pack: center;
@@ -309,7 +309,7 @@ body {
         left: 0;
     
     }
-    .aside .nav-toggler.oen span::after{
+    .aside .nav-toggler.open span::after{
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
         top: 0px;
