@@ -6,7 +6,7 @@
         display:-ms-flexbox;
         display: flex;
         left: 2rem;
-        top: 26px;
+        top: 30px;
     }
     .aside .nav-toggler .open{
         left: 200px;
@@ -82,7 +82,7 @@
     .contact .contact-info-item p,
     .service .service-item .service-item-inner p,
     .about .about-content .timeline .timeline-text {
-        font-size: 8px;
+        font-size: 10px;
     }
 
 
@@ -92,7 +92,7 @@
         width: 100%;
     }
     .about .about-content .timeline {
-        width: 250%;
+        width: 200%;
     }
     .aside .logo{
         padding: 60px 0;
@@ -101,6 +101,9 @@
         -ms-flex: 0 0 50%;
         flex: 0 0 60%;
         max-width: 60%;
+    }
+    .about .about-content .timeline .timeline-title{
+        font-size: 14px;
     }
     .contact .contact-info-item{
         padding-left: 6px!important;
