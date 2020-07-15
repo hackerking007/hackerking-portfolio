@@ -82,7 +82,7 @@
     .contact .contact-info-item p,
     .service .service-item .service-item-inner p,
     .about .about-content .timeline .timeline-text {
-        font-size: 14px;
+        font-size: 8px;
     }
 
 
@@ -102,8 +102,34 @@
         flex: 0 0 60%;
         max-width: 60%;
     }
+    .contact .contact-info-item{
+        padding-left: 6px!important;
+        padding-right: 6px!important;
+    }
     .about .about-content .personal-info .info-item p{
         font-size: 10px;
+    }
+    .contact .contact-info-item .icon .fa{
+        padding-left: 0.5rem;
+        font-size:20px;
+    }
+    .contact .contact-info-item h4{
+        padding-left: 0.5rem;
+        font-size: 12px;
+    }
+    .contact .contact-info-item p{
+        padding-left: 0.5rem;
+        font-size: 6.5px;
+    }
+    .contact .contact-form .form-item .form-control{
+        width: 130%;
+        height: 3px;
+        font-size:10px;
+        padding: 10px 12px;
+    }
+    .contact .contact-form .form-item textarea.form-control{
+        padding-left: 18px;
+        height: 70px;
     }
 
 }
