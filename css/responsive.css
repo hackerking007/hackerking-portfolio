@@ -13,6 +13,7 @@
     }
     .aside {
         left: -270px;
+        
 
     }
     .aside.open{
@@ -78,11 +79,15 @@
     .about .about-content .personal-info .info-item p span {
         font-size: 12px;
     }
+    .about .about-content .personal-info .buttons .btn{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 
     .contact .contact-info-item p,
     .service .service-item .service-item-inner p,
     .about .about-content .timeline .timeline-text {
-        font-size: 10px;
+        font-size: 12px;
     }
 
 
@@ -90,6 +95,7 @@
 @media (max-width:425px){
     .aside.open{
         width: 100%;
+        
     }
     .about .about-content .timeline {
         width: 200%;
@@ -106,11 +112,11 @@
         font-size: 14px;
     }
     .contact .contact-info-item{
-        padding-left: 6px!important;
-        padding-right: 6px!important;
+        
+        padding-right: 9px!important;
     }
     .about .about-content .personal-info .info-item p{
-        font-size: 10px;
+        font-size: 16px;
     }
     .contact .contact-info-item .icon .fa{
         padding-left: 0.5rem;
@@ -125,7 +131,7 @@
         font-size: 6.5px;
     }
     .contact .contact-form .form-item .form-control{
-        width: 130%;
+       
         height: 3px;
         font-size:10px;
         padding: 10px 12px;
@@ -133,6 +139,18 @@
     .contact .contact-form .form-item textarea.form-control{
         padding-left: 18px;
         height: 70px;
+        width: 210px;
+        margin-left: 10px;
     }
 
+}
+@media (max-width: 320px){
+    .about .about-content .timeline {
+        width: 250%;
+    }
+    .contact .contact-form .form-item textarea.form-control{
+        width: 200px;
+        height: 60px;
+        margin-left: 9px;
+    }
 }

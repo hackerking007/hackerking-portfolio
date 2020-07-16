@@ -93,7 +93,7 @@ body {
         font-weight: 700;
         margin: 0;
         position: relative;
-        margin-left: 32px;
+        /*margin-left: 32px;*/
     }
     .section-title h2::before{
       content: '';
@@ -123,8 +123,8 @@ body {
         position: relative;
     }
     .padd-15{
-        padding-left: 15px!important;
-        padding-right: 15px!important;
+        padding-left: 16px!important;
+        padding-right: 16px!important;
     }
     
     .container{
