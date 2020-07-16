@@ -118,8 +118,8 @@ body {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin-right: 15px;
-        margin-left: 15px;
+        /*margin-right: -15px;
+        margin-left: -15px;*/
         position: relative;
     }
     .padd-15{
@@ -448,7 +448,7 @@ body {
         margin-left: 4px;
         display: inline-block;
     }
-}
+
 .about .about-content .personal-info .buttons{
     margin-top: 30px;
 }
@@ -467,7 +467,8 @@ body {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 100%;
-        margin-top: 40px;
+        /* margin-top: 40px; */
+        margin-bottom: 30px;
     }
     .about .about-content .skills .skill-item h5{
         line-height: 40px;
@@ -481,7 +482,7 @@ body {
         background-color: #e3e3e3;
         height: 7px;
         border-radius: 4px;
-        overflow: hidden;
+        /* overflow: hidden; */
         width: 100%;
         position: relative;
     }
@@ -497,7 +498,7 @@ body {
         border-radius: 4px;
     }
     .about .about-content .skills .skill-item .skill-percent{
-        display: none;
+       
         line-height: 40px;
         position: absolute;
         right: 0;
@@ -536,7 +537,7 @@ body {
         padding: 30px 15px;
         border: 1px solid #d4d4e3;
         border-radius: 10px;
-        width: 100%;
+        width: 110%;
         position: relative;
     }
     .about .about-content .timeline .timeline-item{
@@ -947,9 +948,9 @@ body {
 
 /*Contact Section*/
 .contact .contact-info-item{
-    -ms-flex: 0 0 33.33%;
-     flex: 0 0 33.33%;
-     max-width: 33.33%;
+    -ms-flex: 0 0 50%;
+     flex: 0 0 50%;
+     max-width: 50%;
      text-align: center;
      margin-bottom: 40px;
 }

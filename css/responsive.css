@@ -93,12 +93,33 @@
 
 }
 @media (max-width:425px){
+    .row{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .about .about-content .about-text h3 {
+        font-size: 20px;
+    }
     .aside.open{
         width: 100%;
         
     }
+    .about .about-content .skills .skill-item{
+        flex: 0 0 100%;
+    max-width: 100%;
+    
+    }
     .about .about-content .timeline {
-        width: 200%;
+        width: 110%;
     }
     .aside .logo{
         padding: 60px 0;
@@ -119,16 +140,16 @@
         font-size: 16px;
     }
     .contact .contact-info-item .icon .fa{
-        padding-left: 0.5rem;
-        font-size:20px;
+       
+        font-size:24px;
     }
     .contact .contact-info-item h4{
-        padding-left: 0.5rem;
+       
         font-size: 12px;
     }
     .contact .contact-info-item p{
-        padding-left: 0.5rem;
-        font-size: 6.5px;
+        
+        font-size: 10px;
     }
     .contact .contact-form .form-item .form-control{
        
@@ -144,9 +165,25 @@
     }
 
 }
+@media (max-width:380px) {
+    .aside.open {
+        width: 100%;
+    }
+
+    
+
+    .aside .copyright-text {
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .aside .nav li a {
+        font-size: 16px;
+    }
+} 
 @media (max-width: 320px){
     .about .about-content .timeline {
-        width: 250%;
+        width: 120%;
     }
     .contact .contact-form .form-item textarea.form-control{
         width: 200px;
